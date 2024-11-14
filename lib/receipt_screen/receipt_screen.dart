@@ -45,7 +45,7 @@ class ReceiptScreen extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20).copyWith(bottom: 100),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -53,6 +53,13 @@ class ReceiptScreen extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
+                        SizedBox(
+                          height: 100,
+                          width: 180,
+                          child: Image.asset(
+                            'assets/images/optima.jpeg',
+                          ),
+                        ),
                         DataTextField(
                           title: "Дата и время",
                           textEditingController: dateController,
@@ -85,6 +92,21 @@ class ReceiptScreen extends StatelessWidget {
                           title: "Сумма с учетом комиссии",
                           textEditingController: totalAmountController,
                         ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Image.asset(
+                          'assets/images/2024-11-15 00.30.58.png',
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: Divider(
+                            color: greyColor,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 150,
+                        )
                       ],
                     ),
                   ),
@@ -99,7 +121,7 @@ class ReceiptScreen extends StatelessWidget {
               child: Container(
                 color: Colors.white,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20).copyWith(bottom: 20),
                   child: Column(
                     children: [
                       SizedBox(

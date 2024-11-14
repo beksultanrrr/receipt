@@ -26,5 +26,5 @@ const _textTheme = TextTheme(
     fontSize: 20,
     fontWeight: FontWeight.w500,
   ),
-  headlineLarge: TextStyle(fontSize: 19, fontWeight: FontWeight.w600, color: Colors.black),
+  headlineLarge: TextStyle(fontSize: 19, fontWeight: FontWeight.w500, color: Colors.black),
 );
