@@ -96,7 +96,7 @@ class ReceiptScreen extends StatelessWidget {
                           height: 20,
                         ),
                         Image.asset(
-                          'assets/images/2024-11-15 00.30.58.png',
+                          'assets/images/logo.png',
                         ),
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 20),
